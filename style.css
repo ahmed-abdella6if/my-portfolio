@@ -290,6 +290,7 @@ section { position: relative; z-index: 1; padding-block: clamp(4rem, 9vw, 7.5rem
   transition: transform var(--dur-med) var(--ease);
 }
 .mobile-menu.open { transform: translateY(0); }
+.mobile-menu nav { display: flex; flex-direction: column; gap: 1.5rem; }
 .mobile-menu a { font-family: var(--font-display); font-size: 1.8rem; color: var(--paper); }
 .mobile-menu .mm-cta { margin-top: 1rem; }
 
