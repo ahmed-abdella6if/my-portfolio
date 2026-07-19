@@ -195,7 +195,7 @@ const PROJECTS = [
     descriptionAr:
       "صفحة هبوط ثنائية اللغة (إنجليزي/عربي) لعلامة عقارية فاخرة، مصمَّمة لعرض الوحدات بإحساس راقٍ وتحويل الاهتمام إلى تواصل مباشر عبر واتساب.",
     tech: ["HTML5", "CSS3", "JavaScript", "WhatsApp API"],
-    liveUrl: "https://www.millersinfinity.com/",
+    liveUrl: "https://millersinfinity.com/",
     githubUrl: "",
     featured: true
   },
