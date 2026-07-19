@@ -84,6 +84,7 @@
 
     const toggle = $("#navToggle");
     const menu = $("#mobileMenu");
+    const closeBtn = $("#mobileMenuClose");
     const closeMenu = () => {
       menu.classList.remove("open");
       toggle.classList.remove("open");
@@ -97,9 +98,15 @@
       toggle.setAttribute("aria-expanded", String(willOpen));
       document.body.style.overflow = willOpen ? "hidden" : "";
     });
-    // delegated so it still works after nav links are re-rendered
+    if (closeBtn) closeBtn.addEventListener("click", closeMenu);
+    // delegated so it still works after nav links are re-rendered;
+    // also closes when tapping the empty backdrop area (anything that
+    // isn't a link, the close button, the language toggle, or the CTA)
     menu.addEventListener("click", (e) => {
-      if (e.target.tagName === "A") closeMenu();
+      if (e.target.tagName === "A" || e.target === menu) closeMenu();
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && menu.classList.contains("open")) closeMenu();
     });
 
     const toTop = $("#toTop");

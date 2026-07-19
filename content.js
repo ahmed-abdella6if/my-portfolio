@@ -195,7 +195,7 @@ const PROJECTS = [
     descriptionAr:
       "صفحة هبوط ثنائية اللغة (إنجليزي/عربي) لعلامة عقارية فاخرة، مصمَّمة لعرض الوحدات بإحساس راقٍ وتحويل الاهتمام إلى تواصل مباشر عبر واتساب.",
     tech: ["HTML5", "CSS3", "JavaScript", "WhatsApp API"],
-    liveUrl: "https://millersinfinity.com/",
+    liveUrl: "https://www.millersinfinity.com/",
     githubUrl: "",
     featured: true
   },
@@ -225,7 +225,7 @@ const PROJECTS = [
     descriptionAr:
       "موقع تسويقي من صفحة واحدة بهوية بصرية مميزة: رسوم متحركة على شكل كوكبة نجوم، عرض أفقي متحرك للعملاء، وقسم خدمات بتصميم خاص يجعل عروض الوكالة لا تُنسى.",
     tech: ["HTML5", "CSS3", "Canvas API", "JavaScript"],
-    liveUrl: "https://aldab3marketingagency.com/",
+    liveUrl: "https://aldab3marketingagency.com",
     githubUrl: "",
     featured: true
   }
